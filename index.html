@@ -20,9 +20,8 @@
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <h1>AVILLA</h1>
-    <p>Next generation DJ / Producer</p>
+  <div class="hero-text">
+    next generation dj / producer from Brasil
   </div>
 </section>
 
@@ -40,7 +39,7 @@
     <img src="assets/cards/demo.jpg" alt="Demo Drop">
     <div class="card-content">
       <h3>Demo Drop</h3>
-      <button class="card-btn" id="openDemo">Submit Demo</button>
+      <a href="#" class="card-btn">Submit Demo</a>
     </div>
   </div>
 
@@ -61,42 +60,6 @@
   </div>
 
 </section>
-
-<!-- MODAL -->
-<div class="modal" id="demoModal">
-  <div class="modal-inner">
-    <button class="modal-close" id="closeDemo">×</button>
-
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSc7DEOXINuqYRNqFybU2pKTnQLNdyjmf7Ha4YgnUZmByyuFcg/viewform?embedded=true"
-      loading="lazy">
-    </iframe>
-
-  </div>
-</div>
-
-<script>
-const openBtn = document.getElementById("openDemo");
-const closeBtn = document.getElementById("closeDemo");
-const modal = document.getElementById("demoModal");
-
-openBtn.onclick = () => {
-  modal.classList.add("active");
-  document.body.style.overflow = "hidden";
-};
-
-closeBtn.onclick = () => {
-  modal.classList.remove("active");
-  document.body.style.overflow = "auto";
-};
-
-modal.onclick = (e) => {
-  if (e.target === modal) {
-    modal.classList.remove("active");
-    document.body.style.overflow = "auto";
-  }
-};
-</script>
 
 </body>
 </html>
