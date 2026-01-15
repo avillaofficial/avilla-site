@@ -2,36 +2,34 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AVILLA — Next Generation DJ / Producer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-
-  <!-- Favicon -->
-  <link rel="icon" href="assets/logo/fiveicon.png" sizes="32x32" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> <!-- Link para o favicon -->
 </head>
-
 <body>
 
 <header class="header">
-  <a href="https://avillaofficial.github.io/avilla-site/" class="logo-link">
-    <img src="assets/logo/avilla-logo.png" alt="AVILLA Logo" class="logo">
-  </a>
+  <div class="logo">
+    <a href="#home"><img src="assets/logo.png" alt="AVILLA Logo" id="logo"></a> <!-- Logo com link de Home -->
+  </div>
   <nav class="nav">
-    <a href="https://avillaofficial.github.io/avilla-site/">Home</a>
-    <a href="#">Releases</a>
-    <a href="#">Press</a>
-    <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#releases">Releases</a>
+    <a href="#press">Press</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
   <div class="hero-content">
-    <img src="assets/logo/avilla-logo.png" alt="AVILLA Logo" class="hero-logo">
-    <p>Next generation DJ / Producer from Brasil</p>
+    <h1>AVILLA</h1>
+    <p>Next generation DJ / Producer from Brazil</p>
   </div>
 </section>
 
 <section class="cards">
+
   <div class="card">
     <img src="assets/cards/release.jpg" alt="Latest Release">
     <div class="card-content">
@@ -44,7 +42,7 @@
     <img src="assets/cards/demo.jpg" alt="Demo Drop">
     <div class="card-content">
       <h3>Demo Drop</h3>
-      <a href="https://drive.google.com/drive/folders/1ytqI_ZXbvHCf9pDVX1SuNH8yMEbfniNZ?usp=sharing" target="_blank" class="card-btn">Submit Demo</a>
+      <a href="#" class="card-btn" id="demoDropBtn">Submit Demo</a> <!-- Mudei para usar um ID para esse botão -->
     </div>
   </div>
 
@@ -63,13 +61,23 @@
       <a href="#" class="card-btn">Join</a>
     </div>
   </div>
+
 </section>
 
-<!-- Formulário -->
-<section class="demo-form">
-  <h2>Submit Your Demo</h2>
+<!-- Aqui o formulário "Submit Demo" é embutido -->
+<section class="demo-form" id="demoForm">
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc7DEOXINuqYRNqFybU2pKTnQLNdyjmf7Ha4YgnUZmByyuFcg/viewform?embedded=true" width="640" height="1390" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
 </section>
+
+<script>
+  // Script para o botão de Demo Drop abrir o formulário ao ser clicado
+  const demoDropBtn = document.getElementById("demoDropBtn");
+  const demoForm = document.getElementById("demoForm");
+
+  demoDropBtn.addEventListener("click", function() {
+    demoForm.style.display = "block"; // Exibir o formulário
+  });
+</script>
 
 </body>
 </html>
