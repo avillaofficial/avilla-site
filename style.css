@@ -148,9 +148,9 @@ body {
 }
 
 body {
-  background: #0b0b0b;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  background: #121212;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
 }
 
 /* HEADER */
@@ -166,10 +166,12 @@ body {
   background: rgba(0, 0, 0, 0.75);
 }
 
-.logo {
-  font-size: 18px;
+.logo a {
+  font-size: 26px;
   letter-spacing: 3px;
   font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 .nav a {
@@ -186,31 +188,50 @@ body {
 
 /* RELEASES */
 .releases {
-  padding: 60px 20px;
+  padding: 100px 20px 40px;
   text-align: center;
 }
 
 .releases h2 {
-  font-size: 24px;
-  margin-bottom: 40px;
-  color: #fff;
+  font-size: 30px;
+  margin-bottom: 30px;
   letter-spacing: 2px;
 }
 
 .release {
-  background-color: #121212;
-  border-radius: 12px;
-  padding: 20px;
+  background-color: #1d1d1d;
+  border-radius: 15px;
+  padding: 30px;
   margin: 20px 0;
-  display: inline-block;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
+  margin: auto;
 }
 
 .release iframe {
   width: 100%;
-  height: 200px; /* Ajustando a altura para 200px */
+  height: 300px;
   border-radius: 12px;
+}
+
+/* CTA BUTTON */
+.cta {
+  margin-top: 30px;
+}
+
+.cta-button {
+  background-color: #ff5500;
+  padding: 12px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #e94e00;
 }
 
 /* FOOTER */
