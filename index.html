@@ -28,7 +28,6 @@
 
 <section class="cards">
 
-  <!-- LATEST RELEASE -->
   <div class="card">
     <img src="assets/cards/release.jpg" alt="Latest Release">
     <div class="card-content">
@@ -37,16 +36,14 @@
     </div>
   </div>
 
-  <!-- DEMO DROP -->
   <div class="card">
     <img src="assets/cards/demo.jpg" alt="Demo Drop">
     <div class="card-content">
       <h3>Demo Drop</h3>
-      <button class="card-btn" onclick="openDemo()">Submit Demo</button>
+      <button class="card-btn" id="openDemo">Submit Demo</button>
     </div>
   </div>
 
-  <!-- RADIO -->
   <div class="card">
     <img src="assets/cards/radio.jpg" alt="Radio / Podcast">
     <div class="card-content">
@@ -55,7 +52,6 @@
     </div>
   </div>
 
-  <!-- COMMUNITY -->
   <div class="card">
     <img src="assets/cards/community.jpg" alt="Community">
     <div class="card-content">
@@ -66,10 +62,10 @@
 
 </section>
 
-<!-- DEMO MODAL -->
-<div id="demoModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeDemo()">×</span>
+<!-- MODAL -->
+<div class="modal" id="demoModal">
+  <div class="modal-inner">
+    <button class="modal-close" id="closeDemo">×</button>
 
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLSc7DEOXINuqYRNqFybU2pKTnQLNdyjmf7Ha4YgnUZmByyuFcg/viewform?embedded=true"
@@ -80,15 +76,26 @@
 </div>
 
 <script>
-function openDemo() {
-  document.getElementById("demoModal").style.display = "block";
-  document.body.style.overflow = "hidden";
-}
+const openBtn = document.getElementById("openDemo");
+const closeBtn = document.getElementById("closeDemo");
+const modal = document.getElementById("demoModal");
 
-function closeDemo() {
-  document.getElementById("demoModal").style.display = "none";
+openBtn.onclick = () => {
+  modal.classList.add("active");
+  document.body.style.overflow = "hidden";
+};
+
+closeBtn.onclick = () => {
+  modal.classList.remove("active");
   document.body.style.overflow = "auto";
-}
+};
+
+modal.onclick = (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("active");
+    document.body.style.overflow = "auto";
+  }
+};
 </script>
 
 </body>
