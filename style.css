@@ -26,13 +26,12 @@ body {
 
 .logo-img {
   width: auto;
-  height: 60px; /* Ajuste do tamanho do logo */
+  height: 50px; /* Ajuste para o logo ficar do tamanho adequado */
 }
 
 .nav {
   display: flex;
-  justify-content: flex-start; /* Alinha a navegação à esquerda */
-  margin-left: 30px;
+  justify-content: flex-start;
 }
 
 .nav a {
@@ -59,7 +58,7 @@ body {
 
 .hero-logo {
   width: auto;
-  height: 60px; /* Ajuste do tamanho do logo */
+  height: 60px; /* Ajuste para o tamanho do logo */
 }
 
 .hero-subtitle {
