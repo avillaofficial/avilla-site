@@ -17,25 +17,27 @@
 <body>
 
 <header class="header">
-  <div class="logo">AVILLA</div>
+  <a href="#home">
+    <img src="assets/logo.png" alt="AVILLA Logo" class="logo-header">
+  </a>
   <nav class="nav">
-    <a href="#">Home</a>
+    <a href="#home">Home</a>
     <a href="#">Releases</a>
     <a href="#">Press</a>
     <a href="#">Contact</a>
   </nav>
 </header>
 
-<!-- HERO SOMENTE VISUAL -->
-<section class="hero"></section>
-
-<!-- TEXTO INSTITUCIONAL -->
-<section class="intro">
-  <p>next generation dj / producer from Brasil</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>AVILLA</h1>
+    <p>Next generation DJ / Producer from Brasil</p>
+  </div>
 </section>
 
+<!-- Cards Section -->
 <section class="cards">
-
   <div class="card">
     <img src="assets/cards/release.jpg" alt="Latest Release">
     <div class="card-content">
@@ -67,10 +69,9 @@
       <a href="#" class="card-btn">Join</a>
     </div>
   </div>
-
 </section>
 
-<!-- MODAL -->
+<!-- Modal Demo Drop -->
 <div id="demoModal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeDemo()">×</span>
