@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <title>AVILLA — Next Generation DJ / Producer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+  <meta name="theme-color" content="#000000">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,8 +27,10 @@
 </header>
 
 <section class="hero">
+  <div class="hero-overlay"></div>
+
   <div class="hero-text">
-    next generation dj / producer from Brasil
+    <p>next generation dj / producer from Brasil</p>
   </div>
 </section>
 
@@ -39,7 +48,7 @@
     <img src="assets/cards/demo.jpg" alt="Demo Drop">
     <div class="card-content">
       <h3>Demo Drop</h3>
-      <a href="#" class="card-btn">Submit Demo</a>
+      <a href="#" class="card-btn" onclick="openDemo()">Submit Demo</a>
     </div>
   </div>
 
@@ -60,6 +69,25 @@
   </div>
 
 </section>
+
+<!-- MODAL -->
+<div id="demoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeDemo()">×</span>
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSc7DEOXINuqYRNqFybU2pKTnQLNdyjmf7Ha4YgnUZmByyuFcg/viewform?embedded=true">
+    </iframe>
+  </div>
+</div>
+
+<script>
+function openDemo() {
+  document.getElementById("demoModal").style.display = "flex";
+}
+function closeDemo() {
+  document.getElementById("demoModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
