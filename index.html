@@ -2,41 +2,32 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>AVILLA — Next Generation DJ / Producer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FAVICON -->
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
-  <meta name="theme-color" content="#000000">
-
+  <title>AVILLA — Next Generation DJ / Producer</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo/fiveicon.png" sizes="32x32" />
 </head>
 
 <body>
 
 <header class="header">
-  <!-- Logo com link para a página inicial -->
-  <a href="https://avillaofficial.github.io/avilla-site/" class="logo">
-    <img src="assets/logo.png" alt="AVILLA Logo" class="logo-img">
+  <a href="https://avillaofficial.github.io/avilla-site/" class="logo-link">
+    <img src="assets/logo/avilla-logo.png" alt="AVILLA Logo" class="logo">
   </a>
-  
   <nav class="nav">
-    <a href="https://avillaofficial.github.io/avilla-site/" class="home-link">Home</a> <!-- Link para a home page -->
+    <a href="https://avillaofficial.github.io/avilla-site/">Home</a>
     <a href="#">Releases</a>
     <a href="#">Press</a>
     <a href="#">Contact</a>
   </nav>
 </header>
 
-<section class="hero" style="background-image: url('assets/hero.jpg');">
+<section class="hero">
   <div class="hero-content">
-    <!-- Logo centralizado -->
-    <img src="assets/logo.png" alt="AVILLA Logo" class="hero-logo">
-    <p class="hero-subtitle">
-      Next generation DJ / Producer from Brasil
-    </p>
+    <img src="assets/logo/avilla-logo.png" alt="AVILLA Logo" class="hero-logo">
+    <p>Next generation DJ / Producer from Brasil</p>
   </div>
 </section>
 
@@ -53,7 +44,7 @@
     <img src="assets/cards/demo.jpg" alt="Demo Drop">
     <div class="card-content">
       <h3>Demo Drop</h3>
-      <a href="#" class="card-btn" onclick="openDemo()">Submit Demo</a>
+      <a href="https://drive.google.com/drive/folders/1ytqI_ZXbvHCf9pDVX1SuNH8yMEbfniNZ?usp=sharing" target="_blank" class="card-btn">Submit Demo</a>
     </div>
   </div>
 
@@ -74,24 +65,11 @@
   </div>
 </section>
 
-<!-- MODAL -->
-<div id="demoModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeDemo()">×</span>
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSc7DEOXINuqYRNqFybU2pKTnQLNdyjmf7Ha4YgnUZmByyuFcg/viewform?embedded=true">
-    </iframe>
-  </div>
-</div>
-
-<script>
-function openDemo() {
-  document.getElementById("demoModal").style.display = "flex";
-}
-function closeDemo() {
-  document.getElementById("demoModal").style.display = "none";
-}
-</script>
+<!-- Formulário -->
+<section class="demo-form">
+  <h2>Submit Your Demo</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc7DEOXINuqYRNqFybU2pKTnQLNdyjmf7Ha4YgnUZmByyuFcg/viewform?embedded=true" width="640" height="1390" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+</section>
 
 </body>
 </html>
