@@ -49,7 +49,8 @@ body {
 /* HERO */
 .hero {
   height: 60vh;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), #0b0b0b);
+  background-size: cover; /* Ajuste para o fundo cobrir toda a área */
+  background-position: center; /* Centraliza a imagem de fundo */
   display: flex;
   align-items: center;
   justify-content: center;
