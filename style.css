@@ -141,64 +141,43 @@ body {
   color: #fff;
 }
 
-/* RELEASES SECTION */
+/* RELEASES */
 .releases {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #111;  /* Fundo escuro */
-}
-
-.releases h1 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 40px;
-}
-
-.release-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta o layout para telas pequenas */
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .release {
-  background: #222;  /* Fundo escuro para os cards */
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.release:hover {
-  transform: scale(1.05);
+  width: 80%;
+  margin-bottom: 20px;
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
 }
 
 .release img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  width: 100%; /* Ajusta a imagem para preencher a largura da div */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 600px; /* Limita a largura máxima das imagens */
+  border-radius: 12px;
 }
 
-.release-info {
-  padding: 20px;
-  color: #fff;
-}
-
-.release-info h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.release-info h3 {
+  margin: 10px 0;
+  font-size: 22px;
 }
 
 .release-info p {
-  font-size: 14px;
-  opacity: 0.8;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .card-btn {
   color: #00cfff;
   text-decoration: none;
-}
-
-.card-btn:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
